@@ -72,11 +72,7 @@ return output
 - output = np.zeros_like(img) creates an empty result image
 - The function - Slides the kernel across the image, multiplies overlapping values, and sums them to get the filtered output at each pixel.
 ---
-  
-| Original Image      | Grayscale                  | Edges Detected               |
-| ------------------- | -------------------------- | ---------------------------- |
-| ![input](./cat.png) | ![gray](./gray_output.png) | ![edges](./sobel_output.png) |
----
+
 
 ### 🚀 How to Run
 ## 1. Clone the repo
