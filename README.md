@@ -14,7 +14,7 @@ We apply a **Gaussian blur** to smooth the image, then use **Sobel filters** to 
 
 ---
 
-###Why Gray Scale?
+### Why Gray Scale?
 -Most edge detection techniques (like Sobel) work on intensity values, not color.
 -Converting the image to grayscale simplifies the data to a single channel, making the calculations faster and more meaningful for detecting edges.
 ✅ Reduces complexity
@@ -51,7 +51,6 @@ Vertical - y direction
 ```python
 magnitude = np.sqrt(edge_x ** 2 + edge_y ** 2)
 ```
-
 ---
 
 ### Convolution Function Logic 
@@ -72,7 +71,6 @@ return output
 - np.pad() adds border pixels to avoid edge errors during convolution.
 - output = np.zeros_like(img) creates an empty result image
 - The function - Slides the kernel across the image, multiplies overlapping values, and sums them to get the filtered output at each pixel.
-
 ---
   
 | Original Image      | Grayscale                  | Edges Detected               |
@@ -80,13 +78,13 @@ return output
 | ![input](./cat.png) | ![gray](./gray_output.png) | ![edges](./sobel_output.png) |
 ---
 
-###🚀 How to Run
-##1. Clone the repo
+### 🚀 How to Run
+## 1. Clone the repo
 ```
 git clone https://github.com/yourusername/sobel-edge-detection.git
 cd sobel-edge-detection
 ```
-##2. Install dependencies
+## 2. Install dependencies
 ```
 pip install numpy matplotlib pillow
 ```
