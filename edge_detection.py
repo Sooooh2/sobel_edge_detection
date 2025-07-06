@@ -5,7 +5,6 @@ from PIL import Image
 
 #loading the image ("file_name.png"), (png/jpg) and converting into gray scale 
 img = Image.open("cat.png").convert("L")
-
 gray = np.array(img, dtype=np.float32)
 
 #sobel kernels for x and y directions
@@ -54,12 +53,12 @@ magnitude = np.clip(magnitude, 0, 255).astype(np.uint8)
 #plotting the results
 plt.figure(figsize=(12,6))
 
-#original 
+# #original 
 plt.subplot(1, 3, 1)
 plt.title("OG")
 plt.imshow(gray, cmap ='gray')
 
-#blurred
+# #blurred
 plt.subplot(1, 3, 2)
 plt.title("Blurred")
 plt.imshow(blurred, cmap = 'gray')
