@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 
 #loading the image ("file_name.png"), (png/jpg) and converting into gray scale 
-img = Image.open("cat.png").convert("L")
+img = Image.open("fish.jpg").convert("L")
 gray = np.array(img, dtype=np.float32)
 
 #sobel kernels for x and y directions
