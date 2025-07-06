@@ -14,7 +14,7 @@ We apply a **Gaussian blur** to smooth the image, then use **Sobel filters** to 
 
 ---
 
-*** Why Gray Scale?
+###Why Gray Scale?
 -Most edge detection techniques (like Sobel) work on intensity values, not color.
 -Converting the image to grayscale simplifies the data to a single channel, making the calculations faster and more meaningful for detecting edges.
 ✅ Reduces complexity
@@ -23,7 +23,7 @@ We apply a **Gaussian blur** to smooth the image, then use **Sobel filters** to 
 
 ---
 
-*** Why Gaussian Blur 
+### Why Gaussian Blur 
 - Images often contain noise that can lead to false edges.
 - A Gaussian blur smooths out high-frequency details, making edge detection more accurate.
 
@@ -33,7 +33,7 @@ We apply a **Gaussian blur** to smooth the image, then use **Sobel filters** to 
 
 --- 
 
-*** Defining Sobel Kernels 
+### Defining Sobel Kernels 
 Horizontal - x direciton
 ```python
 [ -1  0  1 ]
@@ -54,7 +54,7 @@ magnitude = np.sqrt(edge_x ** 2 + edge_y ** 2)
 
 ---
 
-*** Convolution Function Logic 
+### Convolution Function Logic 
 ```python
 kh, kw = kernel.shape
 pad_h, pad_w = kh // 2, kw // 2
@@ -80,17 +80,17 @@ return output
 | ![input](./cat.png) | ![gray](./gray_output.png) | ![edges](./sobel_output.png) |
 ---
 
-*** 🚀 How to Run
-** 1. Clone the repo
+###🚀 How to Run
+##1. Clone the repo
 ```
 git clone https://github.com/yourusername/sobel-edge-detection.git
 cd sobel-edge-detection
 ```
-** 2. Install dependencies
+##2. Install dependencies
 ```
 pip install numpy matplotlib pillow
 ```
-** 3. Run the script
+## 3. Run the script
 ```
 python sobel.py
 ```
