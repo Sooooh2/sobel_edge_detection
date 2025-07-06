@@ -5,6 +5,11 @@ This project demonstrates **Sobel Convolution** — a widely used image processi
 We apply a **Gaussian blur** to smooth the image, then use **Sobel filters** to highlight areas where brightness changes sharply, revealing the edges of objects.
 
 ---
+## Experiment on cat 
+![image](https://github.com/user-attachments/assets/c6e67453-1aff-4851-8f92-0cb474cbd746)
+
+
+---
 
 ## 🔧 Technologies Used
 
